@@ -8,3 +8,8 @@ https://mariadb.com/kb/en/library/supported-character-sets-and-collations/
 ```
 set global log_output='TABLE,FILE';
 ```
+
+## Show all errors 
+```
+[root@localhost mariadb]# cat mariadb.log | grep -i error
+```
