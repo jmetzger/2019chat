@@ -50,4 +50,8 @@ systemctl start mariadb
 
 https://mariadb.com/kb/en/library/full-backup-and-restore-with-mariabackup/
 
+## pt-deadlock-logger 
+
+https://www.percona.com/doc/percona-toolkit/LATEST/pt-deadlock-logger.html
+
 
