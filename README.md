@@ -13,3 +13,8 @@ set global log_output='TABLE,FILE';
 ```
 [root@localhost mariadb]# cat mariadb.log | grep -i error
 ```
+
+## Show all options of mysqld for galera on Centos 8 
+```
+/usr/libexec/mysqld --help --verbose | grep wsrep
+```
