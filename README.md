@@ -30,4 +30,10 @@ mysqldump --all-databases --delete-master-logs --master-data=2 --single-transact
 https://mariadb.com/kb/en/library/purge-binary-logs/
 PURGE BINARY LOGS BEFORE '2013-04-21';
 
+## Mariabackup ##
+
+```
+mariabackup  -u root --backup --target-dir=/usr/src/$(date +"%Y-%m-%d")
+```
+
 
