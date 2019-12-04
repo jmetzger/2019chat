@@ -18,3 +18,12 @@ set global log_output='TABLE,FILE';
 ```
 /usr/libexec/mysqld --help --verbose | grep wsrep
 ```
+
+## Mysqldump with best options for PIT (Point in Time Recovery) (ONLY WITHOUT REPLICATION) 
+
+mysqldump --all-databases --delete-master-logs --master-data=2 --single-transaction -p > /usr/src/all-databases-master-data.sql
+
+## Purge manually 
+
+https://mariadb.com/kb/en/library/purge-binary-logs/
+PURGE BINARY LOGS BEFORE '2013-04-21';
