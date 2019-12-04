@@ -37,12 +37,17 @@ mariabackup  -u root --backup --target-dir=/usr/src/$(date +"%Y-%m-%d")
 # prepare 
 mariabackup  --prepare --target-dir=/usr/src/backupdir 
 # copy-back
+systemctl stop mariadb 
 mv /var/lib/mysql /var/lib/mysql.backup
 mariabackup  --copy-back --target-dir=/usr/src/backupdir
 cd /var/lib/
 chown -R mysql:mysql mysql
 # adjust context for selinux 
 restorecon -Rv /var/lib/mysql
+systemctl start mariadb 
 
+## Mariabackup - Reference ##
+
+https://mariadb.com/kb/en/library/full-backup-and-restore-with-mariabackup/
 
 
