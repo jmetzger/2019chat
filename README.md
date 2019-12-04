@@ -58,3 +58,8 @@ https://www.percona.com/doc/percona-toolkit/LATEST/pt-deadlock-logger.html
 
 https://mariadb.com/kb/en/library/create-sequence/
 
+## Overview different database features 
+
+https://modern-sql.com/blog/2019-02/postgresql-11
+
+
