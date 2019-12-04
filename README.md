@@ -45,7 +45,7 @@ chown -R mysql:mysql mysql
 # adjust context for selinux 
 restorecon -Rv /var/lib/mysql
 systemctl start mariadb 
-
+```
 ## Mariabackup - Reference ##
 
 https://mariadb.com/kb/en/library/full-backup-and-restore-with-mariabackup/
@@ -54,4 +54,7 @@ https://mariadb.com/kb/en/library/full-backup-and-restore-with-mariabackup/
 
 https://www.percona.com/doc/percona-toolkit/LATEST/pt-deadlock-logger.html
 
+## Port of sequence (postgresql) to mariadb (not MySQL) 
+
+https://mariadb.com/kb/en/library/create-sequence/
 
