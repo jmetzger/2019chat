@@ -110,5 +110,14 @@ https://severalnines.com/blog/how-set-read-write-split-galera-cluster-using-prox
 ### Replication Setup with mariadbackup 
 https://mariadb.com/kb/en/library/setting-up-a-replication-slave-with-mariabackup/
 
-### GTID - Pos from master 
+### GTID - Pos from master and slave setting
+```
 SELECT BINLOG_GTID_POS('mariadb-bin.000001', 510);
+# set slave pos on slave 
+SET GLOBAL gtid_slave_pos = '0-1-2';
+```
+### Housekeeping for Binary in Replication // Assuming lack less then 1 day (haha !) 
+
+```
+echo "PURGE BINARY LOGS BEFORE '2019-12-04 09:17:22';" | mysql
+```
