@@ -62,4 +62,20 @@ https://mariadb.com/kb/en/library/create-sequence/
 
 https://modern-sql.com/blog/2019-02/postgresql-11
 
+## Install percona repo 
 
+```
+# Guys, use the latest, instead of specific version  !!! 
+yum install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+```
+## Timeout for deadlocks 
+
+```
+select @@innodb_lock_wait_timeout;
+show variables like 'innodb_lock_wait_timeout';
+# LATEST DEADLOCK is shown like so
+# SECTION 
+show engine innodb status;
+# Type of locks 
+https://dev.mysql.com/doc/refman/8.0/en/innodb-locking.html#innodb-intention-locks
+```
