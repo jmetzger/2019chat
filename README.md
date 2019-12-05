@@ -79,3 +79,11 @@ show engine innodb status;
 # Type of locks 
 https://dev.mysql.com/doc/refman/8.0/en/innodb-locking.html#innodb-intention-locks
 ```
+
+### Timeout Description for deadlocks 
+
+https://mariadb.com/kb/en/library/innodb-system-variables/#innodb_lock_wait_timeout
+
+```
+Description: Time in seconds that an InnoDB transaction waits for an InnoDB row lock (not table lock) before giving up with the error ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction. When this occurs, the statement (not transaction) is rolled back. The whole transaction can be rolled back if the innodb_rollback_on_timeout option is used. Increase this for data warehousing applications or where other long-running operations are common, or decrease for OLTP and other highly interactive applications. This setting does not apply to deadlocks, which InnoDB detects immediately, rolling back a deadlocked transaction. 0 (from MariaDB 10.3.0) means no wait. See WAIT and NOWAIT.
+```
