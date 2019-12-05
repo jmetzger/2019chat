@@ -121,3 +121,15 @@ SET GLOBAL gtid_slave_pos = '0-1-2';
 ```
 echo "PURGE BINARY LOGS BEFORE '2019-12-04 09:17:22';" | mysql
 ```
+
+### which scheduler to use 
+```
+show variables like '%innodb%native%';
++-----------------------+-------+
+| Variable_name         | Value |
++-----------------------+-------+
+| innodb_use_native_aio | ON    |
++-----------------------+-------+
+1 row in set (0.001 sec)
+```
+
