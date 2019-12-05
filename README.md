@@ -103,3 +103,6 @@ pmm-admin add mysql
 pmm-admin list 
 ```
 
+### ProxySQL and read write split galera 
+
+https://severalnines.com/blog/how-set-read-write-split-galera-cluster-using-proxysql
