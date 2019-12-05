@@ -106,3 +106,6 @@ pmm-admin list
 ### ProxySQL and read write split galera 
 
 https://severalnines.com/blog/how-set-read-write-split-galera-cluster-using-proxysql
+
+### Replication Setup with mariadbackup 
+https://mariadb.com/kb/en/library/setting-up-a-replication-slave-with-mariabackup/
