@@ -1,6 +1,9 @@
 # MariaDB 
 MariaDB Training Nurremburg 12.2019
 
+## MySQL Performance PDF 
+http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
+
 ## Possible collations MariaDB 
 https://mariadb.com/kb/en/library/supported-character-sets-and-collations/
 
