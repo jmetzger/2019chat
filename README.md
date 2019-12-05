@@ -87,3 +87,19 @@ https://mariadb.com/kb/en/library/innodb-system-variables/#innodb_lock_wait_time
 ```
 Description: Time in seconds that an InnoDB transaction waits for an InnoDB row lock (not table lock) before giving up with the error ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction. When this occurs, the statement (not transaction) is rolled back. The whole transaction can be rolled back if the innodb_rollback_on_timeout option is used. Increase this for data warehousing applications or where other long-running operations are common, or decrease for OLTP and other highly interactive applications. This setting does not apply to deadlocks, which InnoDB detects immediately, rolling back a deadlocked transaction. 0 (from MariaDB 10.3.0) means no wait. See WAIT and NOWAIT.
 ```
+
+### Percona PMM-Server (Percona Monitoring and Management Server) 
+
+Install PMM with docker
+https://www.percona.com/doc/percona-monitoring-and-management/deploy/server/docker.setting-up.html
+
+Install PMM client from percona repo on Centos 7/8 
+https://www.percona.com/doc/percona-monitoring-and-management/deploy/index.html#deploy-pmm-client-installing
+```
+yum install pmm-client
+pmm-admin config --server 192.168.100.1:8080
+pmm-admin add mysql
+## shpw services configured 
+pmm-admin list 
+```
+
