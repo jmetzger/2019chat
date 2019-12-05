@@ -131,5 +131,8 @@ show variables like '%innodb%native%';
 | innodb_use_native_aio | ON    |
 +-----------------------+-------+
 1 row in set (0.001 sec)
-```
 
+
+cat /sys/block/sda/queue/scheduler
+[mq-deadline] kyber bfq none
+```
