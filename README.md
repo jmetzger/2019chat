@@ -139,3 +139,6 @@ cat /sys/block/sda/queue/scheduler
 
 https://wiki.ubuntu.com/Kernel/Reference/IOSchedulers
 
+### Innodb Performance Optimization 
+
+https://www.percona.com/blog/2013/09/20/innodb-performance-optimization-basics-updated/
