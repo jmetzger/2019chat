@@ -136,3 +136,6 @@ show variables like '%innodb%native%';
 cat /sys/block/sda/queue/scheduler
 [mq-deadline] kyber bfq none
 ```
+
+https://wiki.ubuntu.com/Kernel/Reference/IOSchedulers
+
