@@ -109,3 +109,6 @@ https://severalnines.com/blog/how-set-read-write-split-galera-cluster-using-prox
 
 ### Replication Setup with mariadbackup 
 https://mariadb.com/kb/en/library/setting-up-a-replication-slave-with-mariabackup/
+
+### GTID - Pos from master 
+SELECT BINLOG_GTID_POS('mariadb-bin.000001', 510);
